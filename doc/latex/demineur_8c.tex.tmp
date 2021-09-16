@@ -1,0 +1,263 @@
+\hypertarget{demineur_8c}{}\doxysection{src/demineur.c File Reference}
+\label{demineur_8c}\index{src/demineur.c@{src/demineur.c}}
+
+
+fichier d\textquotesingle{}entête (fonctions) fonctions pour les chaines de caractères  
+
+
+{\ttfamily \#include \char`\"{}demineur.\+h\char`\"{}}\newline
+Include dependency graph for demineur.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{demineur_8c_ab46f953816144864d620b13436d08fab}{est\+Dedans}} (int $\ast$pint\+\_\+tab, int int\+\_\+x, int int\+\_\+taille)
+\begin{DoxyCompactList}\small\item\em Détermine si un élément est dans le tableau. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgrilleDemineur}{grilleD}} \mbox{\hyperlink{demineur_8c_a8f4f6997801fe1d956829167f8d09b25}{affectation\+Bombe}} (\mbox{\hyperlink{structgrilleDemineur}{grilleD}} gd\+\_\+plateau)
+\begin{DoxyCompactList}\small\item\em Initialisation des bombes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgrilleDemineur}{grilleD}} \mbox{\hyperlink{demineur_8c_a4d2605c0c7add2b6ab1275e5ddf9ac45}{remplissageG}} (\mbox{\hyperlink{structgrilleDemineur}{grilleD}} gd\+\_\+plateau)
+\begin{DoxyCompactList}\small\item\em Pré-\/remplie toute la grille. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgrilleDemineur}{grilleD}} \mbox{\hyperlink{demineur_8c_a7ee5b519c22494799559d27fc610ac2b}{init\+GrilleD}} (\mbox{\hyperlink{structgrilleDemineur}{grilleD}} gd\+\_\+plateau)
+\begin{DoxyCompactList}\small\item\em initialisation de la grille de jeu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{demineur_8c_a2ac19f3680be51b15392e08e796040be}{affichageD}} (\mbox{\hyperlink{structgrilleDemineur}{grilleD}} gd\+\_\+plateau)
+\begin{DoxyCompactList}\small\item\em Affiche le plateau de jeu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{demineur_8c_a8a063c66b6495ca45f0b040892db5629}{calcul\+Nombre\+Mine}} (\mbox{\hyperlink{structgrilleDemineur}{grilleD}} gd\+\_\+plateau, int int\+\_\+y, int int\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Calcule le nombre de mine autour d\textquotesingle{}une case. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgrilleDemineur}{grilleD}} \mbox{\hyperlink{demineur_8c_a64ba9a74b50725d8a82e083ac2f3bfc1}{decouverte}} (\mbox{\hyperlink{structgrilleDemineur}{grilleD}} gd\+\_\+plateau, int int\+\_\+y, int int\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Découvre une case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{demineur_8c_a13093b5dd382c3fa59e95a1f83bd8323}{partie}} ()
+\begin{DoxyCompactList}\small\item\em Lance la partie de déminage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+fichier d\textquotesingle{}entête (fonctions) fonctions pour les chaines de caractères 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien (\href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{demineur_8c_a8f4f6997801fe1d956829167f8d09b25}\label{demineur_8c_a8f4f6997801fe1d956829167f8d09b25}} 
+\index{demineur.c@{demineur.c}!affectationBombe@{affectationBombe}}
+\index{affectationBombe@{affectationBombe}!demineur.c@{demineur.c}}
+\doxysubsubsection{\texorpdfstring{affectationBombe()}{affectationBombe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgrilleDemineur}{grilleD}} affectation\+Bombe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrilleDemineur}{grilleD}}}]{gd\+\_\+plateau }\end{DoxyParamCaption})}
+
+
+
+Initialisation des bombes. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em gd\+\_\+plateau} & Plateau avec les bombes à initialiser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plateau de jeu avec placement des bombes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{demineur_8c_a2ac19f3680be51b15392e08e796040be}\label{demineur_8c_a2ac19f3680be51b15392e08e796040be}} 
+\index{demineur.c@{demineur.c}!affichageD@{affichageD}}
+\index{affichageD@{affichageD}!demineur.c@{demineur.c}}
+\doxysubsubsection{\texorpdfstring{affichageD()}{affichageD()}}
+{\footnotesize\ttfamily void affichageD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrilleDemineur}{grilleD}}}]{gd\+\_\+plateau }\end{DoxyParamCaption})}
+
+
+
+Affiche le plateau de jeu. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em gd\+\_\+plateau} & Plateau à afficher \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{demineur_8c_a8a063c66b6495ca45f0b040892db5629}\label{demineur_8c_a8a063c66b6495ca45f0b040892db5629}} 
+\index{demineur.c@{demineur.c}!calculNombreMine@{calculNombreMine}}
+\index{calculNombreMine@{calculNombreMine}!demineur.c@{demineur.c}}
+\doxysubsubsection{\texorpdfstring{calculNombreMine()}{calculNombreMine()}}
+{\footnotesize\ttfamily int calcul\+Nombre\+Mine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrilleDemineur}{grilleD}}}]{gd\+\_\+plateau,  }\item[{int}]{int\+\_\+y,  }\item[{int}]{int\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+Calcule le nombre de mine autour d\textquotesingle{}une case. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em gd\+\_\+plateau} & Plateau du jeu \\
+\hline
+{\em int\+\_\+x} & Abscisse de la case \\
+\hline
+{\em int\+\_\+y} & Ordonnée de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nombre de mine autour de la case 
+\end{DoxyReturn}
+\mbox{\Hypertarget{demineur_8c_a64ba9a74b50725d8a82e083ac2f3bfc1}\label{demineur_8c_a64ba9a74b50725d8a82e083ac2f3bfc1}} 
+\index{demineur.c@{demineur.c}!decouverte@{decouverte}}
+\index{decouverte@{decouverte}!demineur.c@{demineur.c}}
+\doxysubsubsection{\texorpdfstring{decouverte()}{decouverte()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgrilleDemineur}{grilleD}} decouverte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrilleDemineur}{grilleD}}}]{gd\+\_\+plateau,  }\item[{int}]{int\+\_\+y,  }\item[{int}]{int\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+Découvre une case. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em gd\+\_\+plateau} & Plateau du jeu \\
+\hline
+{\em int\+\_\+x} & Abscisse de la case à découvrir \\
+\hline
+{\em int\+\_\+y} & Ordonnée de la case à découvrir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grille avec les cases découvertes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{demineur_8c_ab46f953816144864d620b13436d08fab}\label{demineur_8c_ab46f953816144864d620b13436d08fab}} 
+\index{demineur.c@{demineur.c}!estDedans@{estDedans}}
+\index{estDedans@{estDedans}!demineur.c@{demineur.c}}
+\doxysubsubsection{\texorpdfstring{estDedans()}{estDedans()}}
+{\footnotesize\ttfamily int est\+Dedans (\begin{DoxyParamCaption}\item[{int $\ast$}]{pint\+\_\+tab,  }\item[{int}]{int\+\_\+x,  }\item[{int}]{int\+\_\+taille }\end{DoxyParamCaption})}
+
+
+
+Détermine si un élément est dans le tableau. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em pint\+\_\+tab} & Tableau qui contient les éléments \\
+\hline
+{\em int\+\_\+x} & Element a tester \\
+\hline
+{\em int\+\_\+taille} & Taille du tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrai/\+Faux en fonction de si l\textquotesingle{}élément est dans le tableau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{demineur_8c_a7ee5b519c22494799559d27fc610ac2b}\label{demineur_8c_a7ee5b519c22494799559d27fc610ac2b}} 
+\index{demineur.c@{demineur.c}!initGrilleD@{initGrilleD}}
+\index{initGrilleD@{initGrilleD}!demineur.c@{demineur.c}}
+\doxysubsubsection{\texorpdfstring{initGrilleD()}{initGrilleD()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgrilleDemineur}{grilleD}} init\+GrilleD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrilleDemineur}{grilleD}}}]{gd\+\_\+plateau }\end{DoxyParamCaption})}
+
+
+
+initialisation de la grille de jeu 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em gd\+\_\+plateau} & Plateau à initialiser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plateau de jeu initialisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{demineur_8c_a13093b5dd382c3fa59e95a1f83bd8323}\label{demineur_8c_a13093b5dd382c3fa59e95a1f83bd8323}} 
+\index{demineur.c@{demineur.c}!partie@{partie}}
+\index{partie@{partie}!demineur.c@{demineur.c}}
+\doxysubsubsection{\texorpdfstring{partie()}{partie()}}
+{\footnotesize\ttfamily void partie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lance la partie de déminage. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+\mbox{\Hypertarget{demineur_8c_a4d2605c0c7add2b6ab1275e5ddf9ac45}\label{demineur_8c_a4d2605c0c7add2b6ab1275e5ddf9ac45}} 
+\index{demineur.c@{demineur.c}!remplissageG@{remplissageG}}
+\index{remplissageG@{remplissageG}!demineur.c@{demineur.c}}
+\doxysubsubsection{\texorpdfstring{remplissageG()}{remplissageG()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgrilleDemineur}{grilleD}} remplissageG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrilleDemineur}{grilleD}}}]{gd\+\_\+plateau }\end{DoxyParamCaption})}
+
+
+
+Pré-\/remplie toute la grille. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em gd\+\_\+plateau} & Plateau du jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plateau de jeu avec affichage déjà rempli 
+\end{DoxyReturn}

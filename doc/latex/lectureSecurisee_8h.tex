@@ -1,0 +1,324 @@
+\hypertarget{lectureSecurisee_8h}{}\doxysection{src/lecture\+Securisee.h File Reference}
+\label{lectureSecurisee_8h}\index{src/lectureSecurisee.h@{src/lectureSecurisee.h}}
+
+
+Fichier d\textquotesingle{}entête des fonctions de lecture sécurisée.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for lecture\+Securisee.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{lectureSecurisee_8h_a369266c24eacffb87046522897a570d5}\label{lectureSecurisee_8h_a369266c24eacffb87046522897a570d5}} 
+\#define {\bfseries \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\item 
+\#define \mbox{\hyperlink{lectureSecurisee_8h_a05631a36f382242d1f52d5e9fe06735e}{A\+L\+P\+H\+A\+B\+ET}}~\char`\"{}abcdefghijklmnopqrstuvwxyz\+A\+B\+C\+D\+E\+F\+G\+H\+I\+J\+K\+L\+M\+N\+O\+P\+Q\+R\+S\+T\+U\+V\+W\+X\+YZ\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{lectureSecurisee_8h_a294587294111bfede1e11bdf876b6d10}{vider\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Vidage du buffer jusqu\textquotesingle{}à la fin du fichier ou jusqu\textquotesingle{}à un retour à la ligne. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lectureSecurisee_8h_a46ed2734a1299eed3b4ae17f4e6b7a09}{saisie\+Int}} ()
+\begin{DoxyCompactList}\small\item\em Lecture sécurisée d\textquotesingle{}un entier. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{lectureSecurisee_8h_abb3a3025cbec693e9a7db2e7666aafe8}{saisie\+Float}} ()
+\begin{DoxyCompactList}\small\item\em Lecture sécurisée d\textquotesingle{}un réel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lectureSecurisee_8h_a8df2e5586f60239ac6044b186c73c651}{saisie\+String}} (char $\ast$str\+\_\+chaine, int int\+\_\+taille)
+\begin{DoxyCompactList}\small\item\em Lecture d\textquotesingle{}une chaine de caractère. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{lectureSecurisee_8h_a34f21237635c3d618c047d8ad3bbb9dc}{creation\+Tab}} (int $\ast$int\+\_\+taille)
+\begin{DoxyCompactList}\small\item\em Creation et remplissage d\textquotesingle{}un tableau. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{lectureSecurisee_8h_a96168f27402631f9b35cc0d2a8d0b93d}{init\+Tab}} (int int\+\_\+taille)
+\begin{DoxyCompactList}\small\item\em Creation d\textquotesingle{}un tableau rempli de 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lectureSecurisee_8h_a54fd003d6bb327073b9bb1eb8936d380}{position\+Char}} (char char\+\_\+c)
+\begin{DoxyCompactList}\small\item\em Indique la position de la lettre dans l\textquotesingle{}alphabet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lectureSecurisee_8h_a37dd802da21d39a9ebb9628daa2c8bf2}{afficher\+Tab}} (int $\ast$pint\+\_\+tab, int int\+\_\+taille)
+\begin{DoxyCompactList}\small\item\em Affiche le tableau. \end{DoxyCompactList}\item 
+int $\ast$$\ast$ \mbox{\hyperlink{lectureSecurisee_8h_a5bfac90aa04aee1ee46ce67d0159f806}{creer\+Grille}} (int int\+\_\+ligne, int int\+\_\+colonne)
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}une grille. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lectureSecurisee_8h_af3eac3ad203ab091baad010ef3f7ab0a}{clrscr}} ()
+\begin{DoxyCompactList}\small\item\em Efface le terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fichier d\textquotesingle{}entête des fonctions de lecture sécurisée. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien (\href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/10-\/23 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{lectureSecurisee_8h_a05631a36f382242d1f52d5e9fe06735e}\label{lectureSecurisee_8h_a05631a36f382242d1f52d5e9fe06735e}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!ALPHABET@{ALPHABET}}
+\index{ALPHABET@{ALPHABET}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{ALPHABET}{ALPHABET}}
+{\footnotesize\ttfamily \#define A\+L\+P\+H\+A\+B\+ET~\char`\"{}abcdefghijklmnopqrstuvwxyz\+A\+B\+C\+D\+E\+F\+G\+H\+I\+J\+K\+L\+M\+N\+O\+P\+Q\+R\+S\+T\+U\+V\+W\+X\+YZ\char`\"{}}
+
+Definition de l\textquotesingle{}alphabet qu\textquotesingle{}on utilisera dans les fonctions de chaine 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{lectureSecurisee_8h_a37dd802da21d39a9ebb9628daa2c8bf2}\label{lectureSecurisee_8h_a37dd802da21d39a9ebb9628daa2c8bf2}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!afficherTab@{afficherTab}}
+\index{afficherTab@{afficherTab}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{afficherTab()}{afficherTab()}}
+{\footnotesize\ttfamily void afficher\+Tab (\begin{DoxyParamCaption}\item[{int $\ast$}]{pint\+\_\+tab,  }\item[{int}]{int\+\_\+taille }\end{DoxyParamCaption})}
+
+
+
+Affiche le tableau. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 Initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/13 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em pint\+\_\+tab} & Tableau à afficher \\
+\hline
+{\em int\+\_\+taille} & Taille du tableau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lectureSecurisee_8h_af3eac3ad203ab091baad010ef3f7ab0a}\label{lectureSecurisee_8h_af3eac3ad203ab091baad010ef3f7ab0a}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!clrscr@{clrscr}}
+\index{clrscr@{clrscr}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{clrscr()}{clrscr()}}
+{\footnotesize\ttfamily void clrscr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Efface le terminal. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+Execution sous linux 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{lectureSecurisee_8h_a34f21237635c3d618c047d8ad3bbb9dc}\label{lectureSecurisee_8h_a34f21237635c3d618c047d8ad3bbb9dc}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!creationTab@{creationTab}}
+\index{creationTab@{creationTab}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{creationTab()}{creationTab()}}
+{\footnotesize\ttfamily int$\ast$ creation\+Tab (\begin{DoxyParamCaption}\item[{int $\ast$}]{int\+\_\+taille }\end{DoxyParamCaption})}
+
+
+
+Creation et remplissage d\textquotesingle{}un tableau. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 Initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/20 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em int\+\_\+taille} & Taille du tableau qui sera renvoyée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tableau créée et initialisé 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lectureSecurisee_8h_a5bfac90aa04aee1ee46ce67d0159f806}\label{lectureSecurisee_8h_a5bfac90aa04aee1ee46ce67d0159f806}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!creerGrille@{creerGrille}}
+\index{creerGrille@{creerGrille}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{creerGrille()}{creerGrille()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ creer\+Grille (\begin{DoxyParamCaption}\item[{int}]{int\+\_\+ligne,  }\item[{int}]{int\+\_\+colonne }\end{DoxyParamCaption})}
+
+
+
+Création d\textquotesingle{}une grille. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 Initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/13 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em int\+\_\+ligne} & Nombre de ligne \\
+\hline
+{\em int\+\_\+colonne} & Nombre de colonne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grille allouée 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+grille\mbox{[}ordonnée\mbox{]}\mbox{[}abscisse\mbox{]} 
+\end{DoxyRemark}
+\mbox{\Hypertarget{lectureSecurisee_8h_a96168f27402631f9b35cc0d2a8d0b93d}\label{lectureSecurisee_8h_a96168f27402631f9b35cc0d2a8d0b93d}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!initTab@{initTab}}
+\index{initTab@{initTab}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{initTab()}{initTab()}}
+{\footnotesize\ttfamily int$\ast$ init\+Tab (\begin{DoxyParamCaption}\item[{int}]{int\+\_\+taille }\end{DoxyParamCaption})}
+
+
+
+Creation d\textquotesingle{}un tableau rempli de 0. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 Initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/20 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em int\+\_\+taille} & Taille du tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tableau créée et initialisé 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lectureSecurisee_8h_a54fd003d6bb327073b9bb1eb8936d380}\label{lectureSecurisee_8h_a54fd003d6bb327073b9bb1eb8936d380}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!positionChar@{positionChar}}
+\index{positionChar@{positionChar}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{positionChar()}{positionChar()}}
+{\footnotesize\ttfamily int position\+Char (\begin{DoxyParamCaption}\item[{char}]{char\+\_\+c }\end{DoxyParamCaption})}
+
+
+
+Indique la position de la lettre dans l\textquotesingle{}alphabet. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/27 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em char\+\_\+c} & Caractère dont on veut connaître la position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lectureSecurisee_8h_abb3a3025cbec693e9a7db2e7666aafe8}\label{lectureSecurisee_8h_abb3a3025cbec693e9a7db2e7666aafe8}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!saisieFloat@{saisieFloat}}
+\index{saisieFloat@{saisieFloat}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{saisieFloat()}{saisieFloat()}}
+{\footnotesize\ttfamily float saisie\+Float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lecture sécurisée d\textquotesingle{}un réel. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 Manière différente de verifier l\textquotesingle{}entrée d\textquotesingle{}un réel 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/10-\/23 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+float\+\_\+ent la valeur saisie correctement par l\textquotesingle{}utilisateur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lectureSecurisee_8h_a46ed2734a1299eed3b4ae17f4e6b7a09}\label{lectureSecurisee_8h_a46ed2734a1299eed3b4ae17f4e6b7a09}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!saisieInt@{saisieInt}}
+\index{saisieInt@{saisieInt}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{saisieInt()}{saisieInt()}}
+{\footnotesize\ttfamily int saisie\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lecture sécurisée d\textquotesingle{}un entier. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 Manière différente de verifier l\textquotesingle{}entrée d\textquotesingle{}un entier 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/10-\/23 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+int\+\_\+ent la valeur saisie correctement par l\textquotesingle{}utilisateur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lectureSecurisee_8h_a8df2e5586f60239ac6044b186c73c651}\label{lectureSecurisee_8h_a8df2e5586f60239ac6044b186c73c651}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!saisieString@{saisieString}}
+\index{saisieString@{saisieString}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{saisieString()}{saisieString()}}
+{\footnotesize\ttfamily int saisie\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{str\+\_\+chaine,  }\item[{int}]{int\+\_\+taille }\end{DoxyParamCaption})}
+
+
+
+Lecture d\textquotesingle{}une chaine de caractère. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/11-\/14 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em str\+\_\+chaine} & Chaine de caractère à entrer \\
+\hline
+{\em int\+\_\+taille} & Taille de la chaine voulue (Longueur réelle) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Taille actuelle de la chaine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lectureSecurisee_8h_a294587294111bfede1e11bdf876b6d10}\label{lectureSecurisee_8h_a294587294111bfede1e11bdf876b6d10}} 
+\index{lectureSecurisee.h@{lectureSecurisee.h}!viderBuffer@{viderBuffer}}
+\index{viderBuffer@{viderBuffer}!lectureSecurisee.h@{lectureSecurisee.h}}
+\doxysubsubsection{\texorpdfstring{viderBuffer()}{viderBuffer()}}
+{\footnotesize\ttfamily void vider\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Vidage du buffer jusqu\textquotesingle{}à la fin du fichier ou jusqu\textquotesingle{}à un retour à la ligne. 
+
+\begin{DoxyAuthor}{Author}
+Theo Julien \href{mailto:julientheo@eisti.eu}{\texttt{ julientheo@eisti.\+eu}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 Initiale 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/10-\/23 
+\end{DoxyDate}
